@@ -49,8 +49,15 @@ const existeAlguemDeBackend = alunos2.some(function(item) {
 
 console.log(existeAlguemDeBackend);
 
-const alunosDeBackend = alunos2.filter(function(item) {
+function filtraAlunosDeBackend(item) {
     return item.curso === 'Backend';
-}); // retorna um array com os elementos que atendem a condição
+}
+
+// função quebrada em partes
+const alunosDeBackend = alunos2.filter(filtraAlunosDeBackend); // retorna um array com os elementos que atendem a condição
+
+// const alunosDeBackend = alunos2.filter(function(item) {
+//     return item.curso === 'Backend';
+// }); // retorna um array com os elementos que atendem a condição
 
 console.log(alunosDeBackend);
