@@ -8,7 +8,7 @@ redesSociais.forEach(function (redeSocial, indice) {
     console.log(`#${indice} Eu tenho perfil na rede social: ${redeSocial}`);
 });
 
-const alunos = ['Gustavo', 'José', 'Maria', 'João'];
+const alunos = ['Gustavo', 'Julia', 'Paula', 'João'];
 
 const alunos2 = alunos.map(function (itemAtual) {
     return {
@@ -19,9 +19,14 @@ const alunos2 = alunos.map(function (itemAtual) {
 
 console.log(alunos2);
 
-const numeros = [1, 2, 3, 4, 5];
-const dobroDosNumeros = numeros.map(function (numeroAtual) {
-    return numeroAtual * 2;
+const paula = alunos2.find(function(item) {
+    return item.nome === 'Paula'; // true ou false e retorna undefined se não encontrar
 });
 
-console.log(dobroDosNumeros);
+console.log(paula);
+
+const indiceDaPaula = alunos2.findIndex(function(item) {
+    return item.nome === 'Paula'; // true ou false e retorna undefined se não encontrar
+});
+
+console.log(indiceDaPaula);
