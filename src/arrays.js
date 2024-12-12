@@ -26,7 +26,7 @@ const paula = alunos2.find(function(item) {
 console.log(paula);
 
 const indiceDaPaula = alunos2.findIndex(function(item) {
-    return item.nome === 'Paula'; // true ou false e retorna undefined se não encontrar
+    return item.nome === 'Paula'; // true ou false e retorna -1 se não encontrar
 });
 
 console.log(indiceDaPaula);
