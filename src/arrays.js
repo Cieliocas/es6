@@ -53,6 +53,12 @@ function filtraAlunosDeBackend(item) {
     return item.curso === 'Backend';
 }
 
+// Testando arrow function com o filter
+const alunosDeBackend2 = item => item.curso === 'Backend';
+
+console.log(alunosDeBackend2);
+
+
 // função quebrada em partes
 const alunosDeBackend = alunos2.filter(filtraAlunosDeBackend); // retorna um array com os elementos que atendem a condição
 
