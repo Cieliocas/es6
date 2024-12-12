@@ -35,3 +35,16 @@ const timesDeFutebol = [...timesDeFutebolDeSP, ...timesDeFutebolDoRJ]; // não a
 // timesDeFutebolDeSP.concat(timesDeFutebolDoRJ); // não altera o array original
 
 console.log(timesDeFutebol);
+
+const carroDaJulia = {
+    marca: 'vw',
+    modelo: 'Gol',
+    motor: 1.6
+}
+
+const carroDaAna = { // spread operator copia as propriedades de um objeto para outro
+    ...carroDaJulia,
+    motor: 1.8,
+}
+
+console.log(carroDaAna);
