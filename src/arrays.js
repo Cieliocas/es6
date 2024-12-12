@@ -61,3 +61,20 @@ const alunosDeBackend = alunos2.filter(filtraAlunosDeBackend); // retorna um arr
 // }); // retorna um array com os elementos que atendem a condição
 
 console.log(alunosDeBackend);
+
+const nums = [10, 20, 30, 10];
+
+// reduce - reduz o array a um único valor
+const soma = nums.reduce(function(acumulador, itemAtual) {
+    return acumulador += itemAtual;
+}, 0);
+
+console.log(soma);
+
+// como seria com o comando for
+let soma2 = 0;
+for (let i = 0; i < nums.length; i++) {
+    soma2 += nums[i];
+}
+
+console.log(soma2);
