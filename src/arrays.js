@@ -78,3 +78,10 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 console.log(soma2);
+
+// usando reduce com string - alunos2
+const nomesDosAlunos = alunos2.reduce(function(acumulador, itemAtual) {
+    return acumulador += `${itemAtual.nome} `; // concatenando os nomes
+}, ''); // exemplo: 'Gustavo Julia Paula João Lucio'
+
+console.log(nomesDosAlunos);
