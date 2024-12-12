@@ -22,13 +22,15 @@ function somarComRest (...args) { // rest operator
 console.log(somarComRest(10, 20, 30)); // 60
 
 // spread
-const numeros = [1, 2, 3, 4]
-console.log(...numeros); // 1 2 3 4
+const numeros = [1, 2, 3, 4] // array
+console.log(...numeros); // spread operator
 
 const timesDeFutebolDeSP = ['Palmeiras', 'São Paulo', 'Corinthians', 'Santos'];
 const timesDeFutebolDoRJ = ['Flamengo', 'Fluminense', 'Vasco', 'Botafogo'];
 
-const timesDeFutebol = timesDeFutebolDeSP.concat(...timesDeFutebolDoRJ); // altera o array original
+// const timesDeFutebol = timesDeFutebolDeSP.concat(...timesDeFutebolDoRJ); // altera o array original
+const timesDeFutebol = [...timesDeFutebolDeSP, ...timesDeFutebolDoRJ]; // não altera o array original
+// junta os dois arrays em um novo array através do spread operator
 
 // timesDeFutebolDeSP.concat(timesDeFutebolDoRJ); // não altera o array original
 
