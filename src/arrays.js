@@ -45,6 +45,12 @@ console.log(todosOsAlunosSaoDeFrontend);
 
 const existeAlguemDeBackend = alunos2.some(function(item) {
     return item.curso === 'Backend'; // retorna true ou false
-});
+}); // retorna true se pelo menos um elemento atender a condição
 
 console.log(existeAlguemDeBackend);
+
+const alunosDeBackend = alunos2.filter(function(item) {
+    return item.curso === 'Backend';
+}); // retorna um array com os elementos que atendem a condição
+
+console.log(alunosDeBackend);
