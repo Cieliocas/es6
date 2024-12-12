@@ -30,3 +30,21 @@ const indiceDaPaula = alunos2.findIndex(function(item) {
 });
 
 console.log(indiceDaPaula);
+
+alunos2.push({
+    nome: 'Lucio',
+    curso: 'Backend',
+});
+
+// every - retorna true se todos os elementos do array atenderem a condição
+const todosOsAlunosSaoDeFrontend = alunos2.every(function(item) {
+    return item.curso === 'Frontend'; // retorna true ou false
+});
+
+console.log(todosOsAlunosSaoDeFrontend);
+
+const existeAlguemDeBackend = alunos2.some(function(item) {
+    return item.curso === 'Backend'; // retorna true ou false
+});
+
+console.log(existeAlguemDeBackend);
