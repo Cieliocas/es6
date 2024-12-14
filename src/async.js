@@ -19,6 +19,14 @@ const funcaoMuitoPesadaPromise = new Promise((resolve, reject) => { // resolve =
     }
 });
 
+const promiseComParametro = (loguin, senha) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(`Logado com o usuário: ${loguin}`);
+        }, 3000)
+    });
+}
+
 // Promise é uma função assíncrona que pode ser resolvida ou rejeitada
 
 // o código é processado de forma assíncrona e paralela utilizando o promise
@@ -35,6 +43,11 @@ console.log('Função muito pesada finalizada');
 async function execucaoPrincipal() {
     console.log('inicio')
     // await funcaoMuitoPesadaPromise.then(resultado => console.log(resultado)).catch(erro => console.log(erro));
+    promiseComParametro('cielio@mail.com', '123456').then(resultado => {
+        console.log(resultado)
+    })
+    // essa promise com parametro é uma função assíncrona que retorna uma promise com um tempo de 3 segundos
+
     try { // try para tentar executar o código esperando o resultado
         const resultado = await funcaoMuitoPesadaPromise;
         console.log(resultado)
@@ -46,7 +59,6 @@ async function execucaoPrincipal() {
 }
 
 execucaoPrincipal();
-
 
 
 
