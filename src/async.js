@@ -7,5 +7,5 @@ function funcaoMuitoPesada() {
 }
 
 console.log('Iniciando a função muito pesada');
-funcaoMuitoPesada();
+console.log(funcaoMuitoPesada());
 console.log('Função muito pesada finalizada');
