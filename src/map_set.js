@@ -65,5 +65,13 @@ const array = ['Gian souza', 'Cielio castro', 'Maria silva', 'Gian souza', 'Luan
 
 const arrayComoSet = new Set([...array]); // converte o array para set e utiliza o spread operator
 
-console.log(arrayComoSet); // Set { 'Gian souza', 'Cielio castro', 'Maria silva', 'Luana', 'João Paulo' }
+const arraySemDuplicados = [...arrayComoSet]; // converte o set para array usando spread operator
 
+console.log(arrayComoSet); // Set { 'Gian souza', 'Cielio castro', 'Maria silva', 'Luana', 'João Paulo' }
+console.log(arraySemDuplicados); // [ 'Gian souza', 'Cielio castro', 'Maria silva', 'Luana', 'João Paulo' ]
+
+// set é formado entre chaves e array usa colchetes
+// essa funcionalidade é importante e muito utilizada em projetos
+
+// Set é uma coleção de valores únicos de qualquer tipo, seja valores primitivos ou referências a objetos
+// a remoção de valores duplicados é uma das principais utilidades do set
