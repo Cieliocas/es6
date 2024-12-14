@@ -45,3 +45,4 @@ console.log(pikachu);
 console.log(pikachuDoAsh); // exibindo o objeto
 
 console.log(pikachuDoAsh instanceof Pikachu); // true
+console.log(pikachuDoAsh instanceof Pokemon); // true
