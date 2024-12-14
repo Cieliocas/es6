@@ -8,10 +8,13 @@
 
 // No código acima, a função funcaoMuito ______________________
 
-class Pokemon {
-    nome = '';
-    tipo = '';
+class Pokemon { // Função construtora
+    nome = ''; // atributos do objeto com valor vazio
+    tipo = ''; // atributos do objeto
 }
 
+ // criando um novo objeto com a função construtora
 const pikachu = new Pokemon();
+pikachu.nome = 'Pikachu'; // atribuindo valores aos atributos
+pikachu.tipo = 'Elétrico'; // atribuindo valores aos atributos
 console.log(pikachu);
