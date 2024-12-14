@@ -55,4 +55,16 @@ console.log(carroDaAna);
 const { motor: motorDoCarroDaAna } = carroDaAna; // com desestruturação
 const { motor: motorDoCarroDaJulia } = carroDaJulia; // com desestruturação
 
+console.log(motorDoCarroDaAna);
+console.log(motorDoCarroDaJulia);
+
+const [item1, item2, item3, ...outrosTimes] = timesDeFutebol; // desestruturação de array
+
+console.log(item1);  // Palmeiras
+console.log(item2);  // São Paulo
+console.log(item3);  // Corinthians
+
+console.log(outrosTimes); // ['Santos', 'Flamengo', 'Fluminense', 'Vasco', 'Botafogo']
+
+
 
