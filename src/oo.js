@@ -28,8 +28,12 @@ class Pokemon { // Função construtora
     } // função = método do objeto dentro da classe  
 
     receberDano(dano) { // função = método do objeto dentro da classe
-        this.hp -= 10; // diminuindo o hp
+        this.#hp -= 10; // diminuindo o hp
     } 
+
+    exibeHp() { // função = método do objeto dentro da classe
+        console.log(this.#hp); // exibindo o hp
+    }
 }
 
 class Pikachu extends Pokemon { // Função construtora
@@ -48,8 +52,12 @@ const pikachuDoAsh = new Pikachu(); // criando um novo objeto com a função con
 pikachuDoAsh.receberDano(); // chamando o método receberDano
 
 pikachuDoAsh.hp = 5000; // alterando o hp
+// após tornar hp privado, não é possível alterar o valor do hp
+// o hp continua sendo 90
 
 pikachuDoAsh.atacar(); // chamando o método atacar
+pikachuDoAsh.exibeHp(); // chamando o método exibeHp
+
 console.log(pikachuDoAsh.hp); // exibindo o hp
 
  // criando um novo objeto com a função construtora
