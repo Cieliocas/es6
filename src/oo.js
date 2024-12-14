@@ -13,7 +13,8 @@ class Pokemon { // Função construtora
     // tipo = ''; // atributos do objeto
     // com o construtor não precisa criar os atributos vazios 
     // pois eles são criados automaticamente
-    hp = 100; // atributos do objeto com valor padrão
+    #hp = 100; // atributos do objeto com valor padrão
+    // # é utilizado para criar um atributo privado
 
     constructor(nomeDoPokemon, tipoDoPokemon) { // Função construtora
         this.nome = nomeDoPokemon; 
