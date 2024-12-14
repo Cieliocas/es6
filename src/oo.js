@@ -28,10 +28,18 @@ class Pokemon { // Função construtora
 
 class Pikachu extends Pokemon { // Função construtora
     // pikachu é uma classe que extende a classe Pokemon, ou seja ela herda os atributos e métodos da classe Pokemon
+    constructor() {
+        super('Pikachu', 'Elétrico')
+        // super é utilizado para chamar o construtor da classe pai
+    }
+    atacar() {
+        console.log(`${this.nome} atacou com Choque do Trovão`)
+        // exibindo mensagem sem precisar passar o nome do ataque      
+    }
 }
 
-const pikachuDoAsh = new Pikachu('Pikachu', 'Elétrico'); // criando um novo objeto com a função construtora
-
+const pikachuDoAsh = new Pikachu(); // criando um novo objeto com a função construtora
+pikachuDoAsh.atacar(); // chamando o método atacar
  // criando um novo objeto com a função construtora
 const pikachu = new Pokemon('Pikachu', 'Elétrico'); // Mesmo resultado do código comentado abaixo
 // pikachu.nome = 'Pikachu'; // atribuindo valores aos atributos
