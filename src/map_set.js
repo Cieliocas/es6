@@ -60,3 +60,10 @@ console.log(cpfs.values()); // [Set Iterator] { '12345678900', '12345676660', '1
 cpfs.forEach(valor => {
     console.log(valor); // imprime os valores
 })
+
+const array = ['Gian souza', 'Cielio castro', 'Maria silva', 'Gian souza', 'Luana', 'Luana', 'João Paulo'];
+
+const arrayComoSet = new Set([...array]); // converte o array para set e utiliza o spread operator
+
+console.log(arrayComoSet); // Set { 'Gian souza', 'Cielio castro', 'Maria silva', 'Luana', 'João Paulo' }
+
