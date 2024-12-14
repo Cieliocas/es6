@@ -30,3 +30,15 @@ for (let chave of meuMap.keys()) {
 for (let valor of meuMap.values()) {
     console.log(valor); // imprime o valor // iterando sobre os valores
 }
+
+// Saída para entrada de map logo abaixo:
+// [nome => cielio] 
+// [stack => html, css, js]
+
+for (let [chave, valor] of meuMap.entries()) {
+    console.log(`${chave}: ${valor}`); // iterando sobre as entradas // chave: valor
+}
+
+meuMap.delete('stack'); // deleta a chave
+
+console.log(meuMap); // Map { 'nome' => 'cielio' } // chave, valor
