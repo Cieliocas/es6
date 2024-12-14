@@ -13,6 +13,7 @@ class Pokemon { // Função construtora
     // tipo = ''; // atributos do objeto
     // com o construtor não precisa criar os atributos vazios 
     // pois eles são criados automaticamente
+    hp = 100; // atributos do objeto com valor padrão
 
     constructor(nomeDoPokemon, tipoDoPokemon) { // Função construtora
         this.nome = nomeDoPokemon; 
@@ -23,7 +24,11 @@ class Pokemon { // Função construtora
     atacar(nomeDoAtaque) { // função = método do objeto dentro da classe
     // funcao dentro da classe se torna um método do objeto
         console.log(`${this.nome} atacou com ${nomeDoAtaque}`); // exibindo mensagem
-    }
+    } // função = método do objeto dentro da classe  
+
+    receberDano(dano) { // função = método do objeto dentro da classe
+        this.hp -= 10; // diminuindo o hp
+    } 
 }
 
 class Pikachu extends Pokemon { // Função construtora
@@ -39,7 +44,13 @@ class Pikachu extends Pokemon { // Função construtora
 }
 
 const pikachuDoAsh = new Pikachu(); // criando um novo objeto com a função construtora
+pikachuDoAsh.receberDano(); // chamando o método receberDano
+
+pikachuDoAsh.hp = 5000; // alterando o hp
+
 pikachuDoAsh.atacar(); // chamando o método atacar
+console.log(pikachuDoAsh.hp); // exibindo o hp
+
  // criando um novo objeto com a função construtora
 const pikachu = new Pokemon('Pikachu', 'Elétrico'); // Mesmo resultado do código comentado abaixo
 // pikachu.nome = 'Pikachu'; // atribuindo valores aos atributos
