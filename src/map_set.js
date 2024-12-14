@@ -42,3 +42,6 @@ for (let [chave, valor] of meuMap.entries()) {
 meuMap.delete('stack'); // deleta a chave
 
 console.log(meuMap); // Map { 'nome' => 'cielio' } // chave, valor
+
+// Set
+
