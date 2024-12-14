@@ -48,3 +48,11 @@ const carroDaAna = { // spread operator copia as propriedades de um objeto para 
 }
 
 console.log(carroDaAna);
+
+// desestruturação
+
+// const motorDOCarroDaAna = carroDaAna.motor; // sem desestruturação
+const { motor: motorDoCarroDaAna } = carroDaAna; // com desestruturação
+const { motor: motorDoCarroDaJulia } = carroDaJulia; // com desestruturação
+
+
