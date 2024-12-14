@@ -45,3 +45,18 @@ console.log(meuMap); // Map { 'nome' => 'cielio' } // chave, valor
 
 // Set
 
+const cpfs = new Set(); // objeto set
+
+cpfs.add('12345678900'); // adiciona um valor
+cpfs.add('12345676660'); // segundo valor
+cpfs.add('13335678900'); // terceiro valor
+
+console.log(cpfs); // Set { '12345678900', '12345676660', '13335678900' }
+console.log(cpfs.keys()); // [Set Iterator] { '12345678900', '12345676660', '13335678900' }
+console.log(cpfs.values()); // [Set Iterator] { '12345678900', '12345676660', '13335678900' }
+
+// as keys e values são iguais
+
+cpfs.forEach(valor => {
+    console.log(valor); // imprime os valores
+})
