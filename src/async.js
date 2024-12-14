@@ -11,7 +11,7 @@ const funcaoMuitoPesadaPromise = new Promise((resolve, reject) => { // resolve =
     try {
         let execucoes = 0;
         for (let i = 0; i < 1000000000; i++) {
-            execucoes++; // teste de erro com variavel errada
+            execucoess++; // teste de erro com variavel errada
         }
         resolve(execucoes); // sucesso
     } catch (error) {
@@ -35,7 +35,12 @@ console.log('Função muito pesada finalizada');
 async function execucaoPrincipal() {
     console.log('inicio')
     // await funcaoMuitoPesadaPromise.then(resultado => console.log(resultado)).catch(erro => console.log(erro));
-    const resultado = await funcaoMuitoPesadaPromise;
+    try { // try para tentar executar o código esperando o resultado
+        const resultado = await funcaoMuitoPesadaPromise;
+        console.log(resultado)
+    } catch (e) { // catch para exibir o erro caso ocorra
+        console.log(e)
+    }
 
     console.log('fim')
 }
