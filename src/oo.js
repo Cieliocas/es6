@@ -31,4 +31,7 @@ const pikachu = new Pokemon('Pikachu', 'Elétrico'); // Mesmo resultado do códi
 // pikachu.nome = 'Pikachu'; // atribuindo valores aos atributos
 // pikachu.tipo = 'Elétrico'; // atribuindo valores aos atributos
 pikachu.atacar('Choque do Trovão'); // chamando o método atacar
-console.log(pikachu);
+console.log(pikachu); 
+// é uma classe e não uma instância pois não tem o new
+// o ash tem um pikachu e outra pessoa pode ter outro pikachu
+// a alusão é que o pikachu é uma classe e o pikachu do Ash é uma instância da classe
