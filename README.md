@@ -1,5 +1,5 @@
 
-# Recursos do ES6+  
+# **Recursos do ES6+**  
 
 Cheguei ao final do **Módulo 25: Recursos do ES6+** no qual:  
 
@@ -21,7 +21,7 @@ Cheguei ao final do **Módulo 25: Recursos do ES6+** no qual:
 
 ---
 
-## ES6+ Features**  
+## **ES6+ Features**  
 
 I have completed **Module 25: ES6+ Features**, where I:  
 
